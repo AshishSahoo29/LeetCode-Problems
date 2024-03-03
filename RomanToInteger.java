@@ -75,6 +75,7 @@ public class RomanToInteger {
          String romanNumber = sc.nextLine();
 
          System.out.println(romanToInt(romanNumber));
+         sc.close();
     }
 
 }

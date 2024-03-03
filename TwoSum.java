@@ -26,6 +26,7 @@ Only one valid answer exists. */
 
 //Solution: 
 import java.io.*;
+import java.util.Map;
 class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
