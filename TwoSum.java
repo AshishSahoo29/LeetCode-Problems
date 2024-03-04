@@ -25,7 +25,7 @@ Constraints:
 Only one valid answer exists. */
 
 //Solution: 
-import java.io.*;
+import java.util.*;
 import java.util.Map;
 class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
