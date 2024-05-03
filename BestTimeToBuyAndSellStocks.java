@@ -12,6 +12,7 @@ Example 2:
 Input: prices = [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0. */
+
 public class BestTimeToBuyAndSellStocks {
     public int maxProfit(int[] prices) {
         if (prices == null || prices.length<=1){

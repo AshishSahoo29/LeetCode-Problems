@@ -25,25 +25,25 @@ Thus, the result should be [1,0]. */
 
 public class PlusOne {
     
-    public int[] plusOne(int[] digits) {
-        int n = digits.length;
-        int carry = 1;
-
-        for(int i = n -1; i >= 0; i--){
-            int sum = carry + digits[i];
-            if(sum < 10){
-                digits[i] = sum;
-                return digits;
-            }else{
-                digits[i] = 0;
-                carry = 1;
+        public int[] plusOne(int[] digits) {
+            int n = digits.length;
+            int carry = 1;
+    
+            for(int i = n -1; i >= 0; i--){
+                int sum = carry + digits[i];
+                if(sum < 10){
+                    digits[i] = sum;
+                    return digits;
+                }else{
+                    digits[i] = 0;
+                    carry = 1;
+                }
             }
+    
+            //if carry is still 1 even after completion of loop
+            int[] result = new int[n + 1];
+            result[0] = 1;
+            return result;
         }
-
-        //if carry is still 1 even after completion of loop
-        int[] result = new int[n + 1];
-        result[0] = 1;
-        return result;
-    }
-
+    
 }

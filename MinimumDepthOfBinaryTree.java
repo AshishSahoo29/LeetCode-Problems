@@ -11,7 +11,6 @@ Example 2:
 Input: root = [2,null,3,null,4,null,5,null,6]
 Output: 5 */
 
-
 import java.util.*;
 public class MinimumDepthOfBinaryTree {
     public int minDepth(TreeNode root) {
